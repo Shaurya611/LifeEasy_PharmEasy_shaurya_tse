@@ -1,0 +1,512 @@
+*{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* body{
+    padding: 0;
+    margin: 0;
+} */
+#upper_panel{
+    height: 130px;
+    width: 100%;
+    border: 1px solid teal;
+    background-color: teal;
+    display: flex;
+}
+#logo{
+    height: 50px;
+    width: 12%;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+#logo>img{
+    height: 100%;
+    width: 100%;
+}
+#search_and_links{
+    margin-left: 50px;
+    width: 60%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+#search{
+    margin-top: 10px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#input{
+    height: 100%;
+    width: 92%;
+    border: 0;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    font-size: 18px;
+    color: grey;
+}
+::placeholder{
+    padding-left: 10px;
+    font-size: 18px;
+    color: grey;
+}
+#btn{
+    height: 105%;
+    width: 6%;
+    border: 0;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#btn>img{
+    height: 100%;
+    width: 100%;
+    background-color: grey;
+}
+#links{
+    height: 15px;
+    width: 60%;
+    padding-left: 8px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+#links>a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+#links>a:hover{
+    text-decoration: underline;
+}
+#extra{
+    height: 60px;
+    width: 21%;
+    margin-left: 30px;
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-between;
+}
+#offer{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+#offer>a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 5px;
+}
+#name{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+#name>a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 5px;
+}
+#slider{
+    margin: auto;
+    margin-top: 20px;
+    width: 50%;
+    height: 300px;
+    background-image: url(https://cms-contents.pharmeasy.in/banner/0e7af32e438-2_HP_634x274.jpg);
+    background-size: 100% 100%;
+    animation: slider 30s infinite linear;
+    cursor: pointer;
+}
+@keyframes slider{
+    0%{background-image: url(https://cms-contents.pharmeasy.in/banner/0e7af32e438-2_HP_634x274.jpg);}
+    20%{background-image: url(https://cms-contents.pharmeasy.in/banner/7f7e278a647-1_Family-history_634x274.jpg);}
+    40%{background-image: url(https://cms-contents.pharmeasy.in/banner/b31e77ccae0-GRAND100_PharmaP.jpg);}
+    60%{background-image: url(https://cms-contents.pharmeasy.in/banner/949a102f5db-Comp_HP_634x274.jpg);}
+    80%{background-image: url(https://cms-contents.pharmeasy.in/banner/03438c566ea-Booking-Lab-Tests_HP_634x274.jpg);}
+}
+#advantages{
+    height: 80px;
+    width: 75%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.adv{
+    height: 100%;
+    width: 23%;
+    border: 1px solid black;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.adv:hover{
+    border: 1px solid teal;
+}
+.pro{
+    height: 40%;
+    width: 90%;
+    display: flex;
+    margin-left: 20px;
+    gap: 15px;
+}
+.pro>a{
+    text-decoration: none;
+    color: rgb(46, 43, 43);
+    font-weight: bold;
+    font-size: 15px;
+    padding-top: 10px;
+}
+#ribbon{
+    height: 70px;
+    width: 75%;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: #8573e1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#plus{
+    width: 4%;
+    height: 50%;
+    margin-left: 20px;
+}
+#plus>img{
+    height: 100%;
+    width: 100%;
+}
+#know{
+    width: 80%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(auto);
+}
+#know>a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+#partner_lab{
+    width: 75%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.view{
+    color: teal;
+    cursor: pointer;
+}
+.view:hover{
+    color: black;
+}
+#partLab{
+    width: 75%;
+    height: 210px;
+    margin: auto;
+    margin-top: 5px;
+}
+#card1{
+    height: 100%;
+    width: 30%;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 5px;
+    padding-right: 20px;
+    /* display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(auto);
+    gap: 0px; */
+}
+#card1:hover{
+    border: 1px solid teal;
+}
+#card1>div{
+    height: 40px;
+    width: 35%;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#card1>div>img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+#card1>h4{
+    margin-left: 20px;
+    color: rgb(92, 88, 88);
+}
+#card1>p{
+    margin-left: 20px;
+    padding-bottom: -10px;
+    color: grey;
+}
+#health{
+    width: 75%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+#health_div{
+    width: 75%;
+    height: 210px;
+    margin: auto;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    height: 100%;
+    width: 30%;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 5px;
+    padding-right: 20px;
+}
+.card>div:nth-child(1){
+    height: 50px;
+    width: 25%;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.card>div:nth-child(2){
+    height: auto;
+    width: 70%;
+    margin-left: 10px;
+    padding: -10px 0px 0px 0px ;
+    color: rgb(85, 85, 85);
+}
+#card1:hover{
+    border: 1px solid teal;
+}
+.card:hover{
+    border: 1px solid teal;
+}
+#intro1{
+    height:auto;
+    width: 75%;
+    margin: auto;
+    margin-top: 40px;
+    color: rgb(121, 110, 110);
+}
+#intro2{
+    height:auto;
+    width: 75%;
+    margin: auto;
+    margin-top: 40px;
+    color: rgb(121, 110, 110);
+}
+#intro2>div{
+    width: 100%;
+    height: auto;
+    border: 1px solid rgb(121, 110, 110);
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(auto);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding-left: 20px;
+}
+#happy_customer{
+    height: 380px;
+    width: 100%;
+    background-color: #F4F7FB;
+    margin-top: 30px;
+}
+#happy{
+    width: 20%;
+    color:  rgb(75, 75, 75);
+    margin-left: 12.5%;
+    padding-top: 40px;
+}
+#patients{
+    width: 75%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+#patients>div{
+    height: 100%;
+    width: 45%;
+    display: flex;
+    gap: 10px;
+}
+.imgs{
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+}
+.imgs>img{
+    height: 100%;
+    width: 100%;
+}
+.details{
+    height: 100%;
+    width: 70%;
+    color:  rgb(75, 75, 75);
+}
+#slider2{
+    width: 75%;
+    height: 300px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+}
+.divs{
+    height: 100%;
+    width: 50%;
+}
+.divImg{
+    height: 150px;
+    width: 50%;
+}
+.divImg>img{
+    height: 100%;
+    width: 100%;
+}
+.divHeads{
+    color: rgb(44, 44, 44);
+}
+.divHeads>h4{
+    color: rgb(75, 75, 75);
+}
+#special{
+    width: 75%;
+    height: 250px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.special{
+    height: 100%;
+    width: 22%;
+    color:  rgb(75, 75, 75)
+}
+#downoload{
+    width: 75%;
+    height: 500px;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    gap: 80px;
+}
+#phn_img{
+    width: 22%;
+    height: 85%;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+#phn_img>img{
+    height: 100%;
+    width: 100%;
+}
+#options{
+    width: 35%;
+    height: 85%;
+    margin-top: 30px;
+    color:  rgb(75, 75, 75);
+}
+#options>h3{
+    font-weight: lighter;
+}
+#dwnldLinks{
+    display: flex;
+    justify-content: space-between;
+}
+#dwnldLinks>button{
+    width: 47.5%;
+    height: 50px;
+    background-color: #4F585E;
+    border: 0;
+    border-radius: 5px;
+    display: flex;
+}
+#dwnldLinks>button>img{
+    width: 15%;
+    height: 60%;
+    padding-top: 7px;
+    padding-left: 8px;
+}
+#dwnldLinks>button>p{
+    color: white;
+    padding-left: 8px;
+}
+#dwnldLinks>button:hover{
+    background-color: black;
+}
+#footer{
+    margin: auto;
+    margin-top: 30px;
+    width: 100%;
+    height: 700px;
+    background-color: #F4F7FB;
+    padding-top: 40px;
+}
+#footer_card{
+    width: 70%;
+    height: 500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(auto);
+    gap: 10px;
+}
+#footer_card>div{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(auto);
+    padding-top: 10px;
+    padding-left: 10px;
+    color: rgb(75, 75, 75);
+}
+#footer_card>div>a{
+    text-decoration: none;
+    color: rgb(75, 75, 75);
+}
+#payment{
+    margin: auto;
+    margin-top: 10px;
+    width: 70%;
+    height: 150px;
+    display: flex;
+}
+#pay_img{
+    height: 100%;
+    width: 70%;
+    color: rgb(75, 75, 75);
+    padding-left: 10px;
+}
+#pay_img>img{
+    width: 7%;
+    height: 15%;
+    padding-right: 5px;
+
+}
+#copy{
+    color: rgb(75, 75, 75);
+    padding-top: 50px;
+}
+
+

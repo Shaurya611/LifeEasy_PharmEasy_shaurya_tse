@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTP Verification</title>
+    <link
+      rel="shortcut icon"
+      href="https://pharmeasy.in/pe_logo_2x.png"
+      type="image/x-icon"
+    />
+  </head>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      line-height: 1.5;
+      letter-spacing: 1.2;
+      background-image: url("image.png");
+      color: black;
+    }
+    #payment {
+      height: auto;
+      width: 20%;
+      border: 1px solid rgb(207, 200, 200);
+      margin: auto;
+      margin-top: 180px;
+      box-sizing: border-box;
+      padding: 25px;
+      border-radius: 4px;
+    }
+
+    #payment > h2 {
+      margin: 0;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    #options {
+      display: flex;
+      flex-direction: column;
+      columns: 200px;
+    }
+    #options > p {
+      text-align: left;
+      margin: 0;
+      margin-top: 10px;
+      margin-left: 3px;
+      margin-bottom: 10px;
+      color: black;
+      text-align: center;
+    }
+
+    #options > p:nth-child(2) {
+      color: black;
+      margin: 0;
+    }
+
+    #otp {
+      margin-top: 10px;
+      margin-bottom: 25px;
+      height: 35px;
+      border: 1px solid black;
+      border-radius: 4px;
+      padding-left: 10px;
+      font-weight: bold;
+    }
+
+    #placeOrder {
+      margin-top: 0px;
+
+      height: 35px;
+      margin-bottom: 17px;
+      background-color: #99f591;
+      border: 1px solid black;
+      border-radius: 4px;
+    }
+
+    h1 {
+      text-align: center;
+      font-family: Tahoma, Arial, sans-serif;
+      color: #06d85f;
+      margin: 80px 0;
+    }
+
+    .box {
+      width: 40%;
+      margin: 0 auto;
+      background: rgba(80, 65, 65, 0.2);
+      padding: 35px;
+      border: 2px solid #fff;
+      border-radius: 20px/50px;
+      background-clip: padding-box;
+      text-align: center;
+    }
+
+    .button {
+      font-size: 1em;
+      padding: 10px;
+      color: rgb(242, 247, 243);
+      font-weight: bold;
+      /* border: 2px solid black; */
+      background-color: #06d85f;
+      border-radius: 20px/50px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+      text-align: center;
+    }
+    .button1 {
+      font-size: 1em;
+      padding: 10px;
+      color: black;
+      background-color: lightgreen;
+      border-radius: 20px/50px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+      text-align: center;
+    }
+    .button2 {
+      font-size: 1em;
+      padding: 10px;
+      color: black;
+      background-color: lightblue;
+      border-radius: 20px/50px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+      text-align: center;
+    }
+    a {
+      color: black;
+      text-decoration: none;
+    }
+    .overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      transition: opacity 500ms;
+      visibility: hidden;
+      opacity: 0;
+    }
+    .overlay:target {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .popup {
+      margin: 70px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 5px;
+      width: 30%;
+      position: relative;
+      transition: all 5s ease-in-out;
+    }
+
+    .popup h2 {
+      margin-top: 0;
+      color: #333;
+      font-family: Tahoma, Arial, sans-serif;
+    }
+    .popup .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      transition: all 200ms;
+      font-size: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #333;
+    }
+    .popup .close:hover {
+      color: #06d85f;
+    }
+    .popup .content {
+      max-height: 30%;
+      overflow: auto;
+    }
+    i {
+      color: green;
+    }
+    #small {
+      font-size: small;
+      color: #012410;
+    }
+    /* #red {
+      color: red;
+    } */
+  </style>
+  <body>
+    <div id="payment">
+      <h2>OTP Verificaion</h2>
+      <hr />
+      <form action="" id="options">
+        <p style="color: green;margin-left: -10px;">An OTP has been sent to ********<span id="numD"></span></p>
+        <p style="color: red">Do not leave the page</p>
+        <input type="number" id="otp" placeholder="Enter OTP" />
+        <a class="button" href="#popup1">Verify</a>
+      </form>
+
+      <div id="popup1" class="overlay">
+        <div class="popup">
+          <h2>
+            Payment Successfull <i class="fa-solid fa-circle-check"></i>
+            <p id="small">
+              Your order is confirmed. You will receive an order confirmation
+              email/SMS shortly with the expected delivery date for your
+              items.<br /><br /><br /><a class="button1" href="index.html"
+                >Continue Shopping</a
+              >
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+              <a class="button2" href="cart.html">Go to cart</a>
+            </p>
+          </h2>
+          <a class="close" href="#">&times;</a><br />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script
+  src="https://kit.fontawesome.com/1d18d1cefe.js"
+  crossorigin="anonymous"
+></script>
+
+<script>
+  let num = document.querySelector("#numD")
+  let mob = localStorage.getItem("mobileNumber")
+  let mob2 = ""
+  for(let j=8;j<10;j++){
+      mob2 += mob[j]
+  }
+  
+  num.innerText = mob2
+</script>

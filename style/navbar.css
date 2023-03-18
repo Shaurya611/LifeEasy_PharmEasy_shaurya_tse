@@ -1,0 +1,116 @@
+
+#navbar {
+    height: 64px;
+   margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    /* padding: 0px 40px; */
+    /* padding: 1%; */
+}
+
+/* * {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+} */
+
+#left-box {
+    display: flex;
+    gap: 30px;
+
+}
+
+#right-box {
+    display: flex;
+    gap: 30px;
+}
+
+#navh4444,
+#navh55 {
+    color: #30363C;
+    cursor: pointer;
+}
+
+
+.delivery-section+p {
+    font: 12px;
+    color: #4F585E;
+}
+
+.thin-line {
+    border-left: 1px solid gray;
+    height: 30px;
+    margin-top: 4px;
+}
+#Select{
+background-color: #10847E;
+color: white;
+cursor: pointer;
+}
+.download-logo{
+    display: flex;
+    background-color: #abc3f0;
+    margin: 15px 40px 0px 0px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    border: transparent;
+    height: 40px;
+}
+.log-in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-thin{
+    width: 24px;
+    height: 24px;
+    margin: 8px 0px 0px 8px;
+}
+.fa-mobile-button{
+    width: 24px;
+    height: 24px;
+    margin: 8px 0px 0px 8px;
+}
+.fa-cart-shopping{
+    width: 24px;
+    height: 24px;
+    margin: 8px 0px 0px 8px;
+}
+.cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.offer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-badge-percent{
+    width: 24px;
+    height: 24px;
+    margin: 8px 0px 0px 8px;
+}
+#divimg1112{
+    height: 24px;
+    width: 24px;
+}
+
+/* .img-logo {
+    height: 30px;
+    width: 60px;
+} */
+#logoimg1112 {
+    height: 55px;
+    width: 130px;
+    cursor: pointer;
+}
+    
+.delivery-section {
+    margin-top: -25px;
+}

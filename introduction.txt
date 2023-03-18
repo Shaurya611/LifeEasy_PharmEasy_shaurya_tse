@@ -1,0 +1,13 @@
+ Team Members =>
+ 1.Akriti 
+ 2.Suraj
+ 3.Roni
+ 4.Abhishek
+ 5.Shaurya
+
+<<<<<<< HEAD
+ Team Lead's name => Suraj
+=======
+# My daily work update
+day-1: achieved
+>>>>>>> 13c83994e553bf592711760a8ff4d18a1df11d7f
