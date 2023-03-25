@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PharmEasy</title>
+    <link rel="shortcut icon" href="https://pharmeasy.in/pe_logo_2x.png" type="image/x-icon" />
     <link rel="stylesheet" href="./style/index.css">
     <link rel="stylesheet" href="./style/footer.css">
     <link rel="stylesheet" href=".//style/navbar.css">
@@ -187,7 +188,7 @@
 
     <!-- offer jusr start -->
 
-    <h2 id="commonh2">Offer Just for You</h2>
+    <!-- <h2 id="commonh2">Offer Just for You</h2> -->
 
     <div id="offerjust2">
         <!-- <div id="offerjust3">
@@ -225,9 +226,10 @@
 
             <button class="pre-btn1">></button>
             <button class="nxt-btn1">></button>
+          
             <div class="product-container1">
 
-                <div class="product-card1">
+                <!-- <div class="product-card1">
                     <div class="product-image1">
 
                         <img class="commonslideimg1"
@@ -288,7 +290,7 @@
                             alt="">
                     </div>
                     <p>Skin care</p>
-                </div>
+                </div> 
 
 
 
@@ -335,6 +337,61 @@
                             alt="">
                     </div>
                     <p>Skin care</p>
+                </div>  -->
+                <div class="product-card">
+                    <div class="product-image">
+    
+                        <img class="img1"   src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/6d462f424a43372ea8b7b6f8ca13e052.png?f=png?dim=360x0" alt="">
+            
+                     
+                    </div>
+    
+    
+                </div>
+    
+                <div class="product-card">
+                    <div class="product-image">
+    
+                        <img class="img1"  src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/9f446c0e74273d70b0baf85e4ff0f76a.png?f=png?dim=360x0" alt="">
+                    </div>
+    
+    
+                </div>
+    
+    
+    
+    
+    
+                <div class="product-card">
+                    <div class="product-image">
+    
+                        <img class="img1"  src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/aace6d1f0dc03f1f8c6e26dd880e1934.png?f=png?dim=360x0"
+                            alt="">
+                    </div>
+    
+    
+                </div>
+    
+    
+    
+    
+                <div class="product-card">
+                    <div class="product-image">
+    
+                        <img class="img1"
+                        src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/3c7ab4d29c6631f7a5cb7eafd3bfbc79.png?f=png?dim=360x0"
+                            alt="">
+                    </div>
+                </div>
+    
+    
+                <div class="product-card">
+                    <div class="product-image">
+    
+                        <img class="img1"   src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/9b3ad6971475304e9e1614ac30d4545a.png?f=png?dim=360x0" alt="">
+                    </div>
+    
+    
                 </div>
 
             </div>
@@ -371,7 +428,7 @@
             <p><b id="bstyle12">&nbsp; 1. &nbsp;</b> Upload a photo of prescription </p>
             <p><b id="bstyle12">&nbsp; 2. &nbsp;</b> Add delivery address and place the order</p>
 
-<!-- 
+            <!-- 
             <p><b id="bstyle12"> 1.</b> Upload a photo of prescription </p>
             <p><b id="bstyle12">2.</b> Add delivery address and place the order</p> -->
 
@@ -384,7 +441,7 @@
             <p><b id="bstyle12">&nbsp; 3. &nbsp;</b> We will call you to conform the medicines</p>
             <p><b id="bstyle12">&nbsp; 4. &nbsp;</b> Now, sit back! your medicines will get delivered at your doorsteps
             </p>
-<!-- 
+            <!-- 
             <p><b id="bstyle12"> 3.</b> We will call you to conform the medicines</p>
             <p><b id="bstyle12"> 4.</b> Now, sit back! your medicines will get delivered at your doorsteps</p> -->
 
@@ -1833,4 +1890,8 @@
 
     let navbar_div = document.getElementById("navbar_div");
     navbar_div.innerHTML = navbar();
+
+    if (JSON.parse(localStorage.getItem("login"))) {
+        document.getElementById("navh4444").innerText = "Logged In";
+    } 
 </script>

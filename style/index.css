@@ -245,6 +245,7 @@
 
 #offerjust2 {
     display: flex;
+   
     padding-left: 2%;
     margin-bottom: 4%;
     /* border: 1px solid red; */
@@ -349,7 +350,7 @@ width: 20%;
     margin-left: -10%;
     height: 130%;
     scroll-behavior: smooth;
-
+    
   }
   
   .product-container1::-webkit-scrollbar {
@@ -670,7 +671,7 @@ margin: auto;
   .product-card111 {
     display: flex;
     margin-left: 20px;
-    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    box-shadow: rgba(56, 67, 77, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
   }
 /* payment offer end */
 

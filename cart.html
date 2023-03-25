@@ -1,181 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      PharmEasy: Online Pharmacy & Medical Store in India | 5M+ ... pharmeasy.in
-    </title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <!-- <link rel="stylesheet" href="../styles/landingpage.css" /> -->
-    <link rel="stylesheet" href="./styles/cart.css" />
-    <link rel="stylesheet" href="./styles/foot.css" />
-    <link rel="stylesheet" href="./styles/cartitem.css" />
-    <link rel="stylesheet" href="./style/footer.css">
-    <link rel="stylesheet" href="./style/navbar.css">
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Payment page
+  </title>
+  <link rel="shortcut icon" href="https://pharmeasy.in/pe_logo_2x.png" type="image/x-icon" />
 
-  <body>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> -->
+  <!-- <link rel="stylesheet" href="../styles/landingpage.css" /> -->
+  <link rel="stylesheet" href="./styles/cart.css" />
+  <link rel="stylesheet" href="./styles/foot.css" />
+  <link rel="stylesheet" href="./styles/cartitem.css" />
+  <link rel="stylesheet" href="./style/footer.css">
+  <link rel="stylesheet" href="./style/navbar.css">
+  <script src="https://kit.fontawesome.com/4e791606d4.js" crossorigin="anonymous"></script>
+  <style>
 
-    <div id="navbar_div">
+  </style>
+</head>
 
-    </div>
-    <header>
-      <div id="header1">
-        <img
-          src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png"
-          alt="logo"
-          onclick="(location.href ='index.html')"
-        />
+<body>
 
-        <!-- <div class="select">
+  <div id="navbar_div">
+
+  </div>
+
+
+
+
+  <div id="cartContainer">
+    <!-- ITEMS IN CART -->
+  </div>
+  <div id="btn">
+
+    <a href="./payment.html">Make Payment</a>
+  </div>
+
+  <!-- <header>
+    <div id="header1">
+      <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt="logo"
+        onclick="(location.href ='index.html')" />
+
+      <div class="select">
           <p id="pinhere">Select Pincode</p>
           <img
             src="https://image.flaticon.com/icons/png/128/25/25243.png"
             alt=""
             id="useme1234"
-          /> -->
-          <div></div>
-          <!-- <div>
+          />
+    
+      <div>
             <input
               type="text"
               placeholder="Search for Medicines / Healthcare Products"
               class="Search"
               id="search1234"
             />
-          </div> -->
-          <!-- <a class="search" href="#"
+          </div>
+      <a class="search" href="#"
             ><img
               src="https://image.flaticon.com/icons/png/128/2089/2089805.png"
-              alt="" -->
-          <!-- /></a> -->
-        <!-- </div> -->
-        <!-- <div class="headerleft" id="useme12"> -->
-          <!-- Don't have a prescriptions? -->
-          <!-- <br /> -->
-          <!-- Get Started -->
-          <img
-            src="https://image.flaticon.com/icons/png/128/44/44571.png"
-            alt=""
-          />
-        </div>
+              alt=""
+      /></a>
       </div>
-      <div id="header2">
-        <div class="downhead">
-          <span
-            ><a href="view_cart.html" style="color: white"
-              >Order Medicines</a
-            ></span
-          >
-          <span
-            ><a href="hcareProduct.html" style="color: white"
-              >Healthcare Products</a
-            ></span
-          >
-          <a href="diagnose.html" style="color: white">Diagnostic Tests</a>
-        </div>
-        <div class="righthead" id="rit">
-          <img
-            src="https://assets.pharmeasy.in/web-assets/dist/275c07e1.svg"
-            alt=""
-            onclick="(location.href ='offer.html')"
-          />
-          <p><a href="offer.html" style="color: white">Offers</a></p>
-
-          <img
-            src="https://assets.pharmeasy.in/web-assets/dist/5eb42971.svg"
-            onclick="pop()"
-          />
-          <p id="makemeuser">
-            <a href="#" style="color: white" id="useme">Login/Signup</a>
-          </p>
-          <p id="useruser">User</p>
-
-          <img
-            src="https://assets.pharmeasy.in/web-assets/dist/21b0b5ba.svg"
-            alt=""
-            onclick="(location.href='cart.html')"
-          />
-          <p><a href="cart.html" style="color: white">Cart</a></p>
-        </div>
-      </div>
-    </header>
-
-    <div style="margin-left: 250px"><h1>Cart</h1></div>
-
-    <!-- empty cart starts here -->
-
-    <div id="carter">
-      <div id="cont"></div>
-      <div id="butcont"></div>
+      <div class="headerleft" id="useme12">
+      Don't have a prescriptions?
+      <br />
+      
+      Get Started
+      
+      <img src="https://image.flaticon.com/icons/png/128/44/44571.png" alt="" />
     </div>
-
-    <!-- footer starts here -->
-    <div id="enc">
-      <div id="bot1">
-        <div>
-          <img
-            src="https://assets.pharmeasy.in/web-assets/dist/9ac2da37.svg?dim=0x72&dpr=1.25&q=100"
-          />
-          <h4>1 Lakh+ Products</h4>
-          <p>
-            We maintain strict quality controls on all our partner retailers, so
-            that you always get standard quality products.
-          </p>
-        </div>
-        <div>
-          <img
-            src="https://assets.pharmeasy.in/web-assets/dist/2f258fe0.svg?dim=0x72&dpr=1.25&q=100"
-          />
-          <h4>Secure Payment</h4>
-          <p>100% secure and trusted payment protection</p>
-        </div>
-        <div>
-          <img
-            src="https://assets.pharmeasy.in/web-assets/dist/256fe591.svg?dim=0x72&dpr=1.25&q=100"
-          />
-          <h4>Easy Return</h4>
-          <p>
-            We have a new and dynamic return window policy for medicines and
-            healthcare items. Refer FAQs section for more details.
-          </p>
-        </div>
+    </div>
+    <div id="header2">
+      <div class="downhead">
+        <span><a href="view_cart.html" style="color: white">Order Medicines</a></span>
+        <span><a href="hcareProduct.html" style="color: white">Healthcare Products</a></span>
+        <a href="diagnose.html" style="color: white">Diagnostic Tests</a>
       </div>
-      <hr />
-      <div id="mob">
-        <div class="mobimg">
-          <img
-            src="https://assets.pharmeasy.in/web-assets/dist/34a16ae8.jpg"
-            alt="mobile App"
-          />
-        </div>
-        <div class="app">
-          <div id="txt">Download the App for Free</div>
-          <div class="logflx">
-            <div class="log">
-              <img
-                src="https://assets.pharmeasy.in/web-assets/dist/3380aedc.png"
-                alt="Google Play"
-              />
-              <p>Google Play</p>
-            </div>
-            <div class="log">
-              <img
-                src="https://assets.pharmeasy.in/web-assets/dist/9bf5c576.png"
-                alt="Apple Store"
-              />
-              <p>Apple Store</p>
-            </div>
+      <div class="righthead" id="rit">
+        <img src="https://assets.pharmeasy.in/web-assets/dist/275c07e1.svg" alt=""
+          onclick="(location.href ='offer.html')" />
+        <p><a href="offer.html" style="color: white">Offers</a></p>
+
+        <img src="https://assets.pharmeasy.in/web-assets/dist/5eb42971.svg" onclick="pop()" />
+        <p id="makemeuser">
+          <a href="#" style="color: white" id="useme">Login/Signup</a>
+        </p>
+        <p id="useruser">User</p>
+
+        <img src="https://assets.pharmeasy.in/web-assets/dist/21b0b5ba.svg" alt=""
+          onclick="(location.href='cart.html')" />
+        <p><a href="cart.html" style="color: white">Cart</a></p>
+      </div>
+    </div>
+  </header> -->
+
+  <!-- 
+  <div style="margin-left: 250px">
+    <h1>Cart</h1>
+  </div> -->
+
+  <!-- empty cart starts here -->
+  <!-- 
+  <div id="carter">
+    <div id="cont"></div>
+    <div id="butcont"></div>
+  </div> -->
+
+  <!-- footer starts here -->
+  <!-- <div id="enc">
+    <div id="bot1">
+      <div>
+        <img src="https://assets.pharmeasy.in/web-assets/dist/9ac2da37.svg?dim=0x72&dpr=1.25&q=100" />
+        <h4>1 Lakh+ Products</h4>
+        <p>
+          We maintain strict quality controls on all our partner retailers, so
+          that you always get standard quality products.
+        </p>
+      </div>
+      <div>
+        <img src="https://assets.pharmeasy.in/web-assets/dist/2f258fe0.svg?dim=0x72&dpr=1.25&q=100" />
+        <h4>Secure Payment</h4>
+        <p>100% secure and trusted payment protection</p>
+      </div>
+      <div>
+        <img src="https://assets.pharmeasy.in/web-assets/dist/256fe591.svg?dim=0x72&dpr=1.25&q=100" />
+        <h4>Easy Return</h4>
+        <p>
+          We have a new and dynamic return window policy for medicines and
+          healthcare items. Refer FAQs section for more details.
+        </p>
+      </div>
+    </div>
+    <hr /> -->
+  <!-- <div id="mob">
+      <div class="mobimg">
+        <img src="https://assets.pharmeasy.in/web-assets/dist/34a16ae8.jpg" alt="mobile App" />
+      </div>
+      <div class="app">
+        <div id="txt">Download the App for Free</div>
+        <div class="logflx">
+          <div class="log">
+            <img src="https://assets.pharmeasy.in/web-assets/dist/3380aedc.png" alt="Google Play" />
+            <p>Google Play</p>
+          </div>
+          <div class="log">
+            <img src="https://assets.pharmeasy.in/web-assets/dist/9bf5c576.png" alt="Apple Store" />
+            <p>Apple Store</p>
           </div>
         </div>
       </div>
+    </div> -->
 
-      <!-- <div id="bot3">
+  <!-- <div id="bot3">
         <div id="b3first">
           <div id="feat">
             <div>
@@ -302,27 +284,75 @@
         </div>
       </div>
     </div>-->
-    <div id="footer_div">
+  <div id="footer_div">
 
-    </div>
-  </body>
-  
+  </div>
+
+</body>
+
 </html>
-<script src="./src/cartpay.js"></script>
-<script src="./src/login.js"></script>
-<script src="./src/signup.js"></script>
-<script src="./src/pincode.js"></script>
+<!-- <script src="./src/cartpay.js"></script> -->
+<!-- <script src="./src/login.js"></script> -->
+<!-- <script src="./src/signup.js"></script> -->
+<!-- <script src="./src/pincode.js"></script> -->
+
+
+
 <script type="module">
   import footer from "./components/footer.js";
- // console.log(footer);
+  // console.log(footer);
   let footer_div = document.getElementById("footer_div");
-  footer_div.innerHTML=footer();
+  footer_div.innerHTML = footer();
+
+
+  // 
+  // 
+  // 
+  var coviddata = JSON.parse(localStorage.getItem("cartdata"));
+
+  let append = (coviddata) => {
+    coviddata.forEach(({ img, name, strikeOffPrice, price, rating }) => {
+      // console.log(strikeOffPrice)
+      // console.log("----")
+      // console.log(price)
+      var div = document.createElement("div");
+      // div.style.border = "1px solid red";
+      var image = document.createElement("img");
+      image.src = img;
+      var na = document.createElement("p");
+      na.innerText = name;
+      var srOfPr = document.createElement("p");
+      srOfPr.innerText = "MRP ₹ " + strikeOffPrice;
+      srOfPr.style.textDecoration = "line-through";
+      // var discount = document.createElement('p');
+      var pr = document.createElement("p");
+      pr.innerText = "₹ " + price;
+
+      //
+      //
+      div.append(image, na, srOfPr, pr);
+      document.querySelector("#cartContainer").append(div);
+    });
+  };
+
+  append(coviddata);
+
+
+  function gotToPaymentPage() {
+    console.log('goToPagementPage')
+  }
+
+
 </script>
 
 
 <script type="module">
   import navbar from "./components/navbar.js";
- 
+
   let navbar_div = document.getElementById("navbar_div");
-  navbar_div.innerHTML=navbar();
+  navbar_div.innerHTML = navbar();
+
+  if (JSON.parse(localStorage.getItem("login"))) {
+    document.getElementById("navh4444").innerText = "Logged In";
+  } 
 </script>

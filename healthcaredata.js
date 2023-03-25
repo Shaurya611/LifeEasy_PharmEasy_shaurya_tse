@@ -2,14 +2,14 @@ var covidData = [
 
     {
         img: "https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FI40695%2Fdettol-antiseptic-liquid-bottle-of-550-ml-2-1643880193.jpg&w=256&q=75",
-        name: "DEttol Antiseptic Liquid Bottle of 550ml",
+        name: "Dettol Antiseptic Liquid Bottle of 550ml",
         strikeOffPrice: 194.60,
         price: 190.71,
         rating: "1077ratings",
     },
     {
         img: "https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FI40097%2Fdettol-liquid-disinfectant-for-floor-cleaner-surface-disinfection-personal-hygiene-lime-fresh-500ml-2-1643880438.jpg&w=256&q=75",
-        name: "Dettol Liuid Disinfectant for Floor...",
+        name: "Dettol Liquid Disinfectant for Floor...",
         strikeOffPrice: 193.0,
         price: 165.9,
         rating: "192ratings",

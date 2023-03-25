@@ -1,6 +1,5 @@
-
 * {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #carter {
@@ -92,4 +91,44 @@
 .cart_box_side > img {
   padding-left: 200px;
   width: 150px;
+}
+#cartContainer {
+  padding-top: 50px;
+}
+/* hr{
+ 
+  width: 100%;
+  font-size: 2px;
+} */
+
+#cartContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 90%;
+  margin: auto;
+}
+
+#cartContainer > div {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#cartContainer > div > img {
+  width: 30%;
+  margin-left: 25%;
+}
+#btn {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+#btn > a {
+  font-size: 17px;
+  border-radius: 8px;
+  background-color: teal;
+  padding: 6px 8px;
+  color: aliceblue;
 }

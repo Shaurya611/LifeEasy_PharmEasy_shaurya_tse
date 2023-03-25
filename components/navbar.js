@@ -26,7 +26,7 @@ let navbar = () =>{
         <div class="log-in">
             <i class="fas fa-thin fa-user"></i>
            
-            <h4 id="navh4444"><a href="login.html">Hello,Log in</a></h4>
+            <h4 id="navh4444"><a href="login.html">Log in</a></h4>
         </div>
        
         <div class="offer">
@@ -43,3 +43,4 @@ let navbar = () =>{
 }
 // exported html code from this page
  export default navbar;
+

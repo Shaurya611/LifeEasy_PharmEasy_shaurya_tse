@@ -151,6 +151,7 @@
         localStorage.setItem("login", "true");
         alert("Login Successful");
         window.location.href = "index.html";
+        // document.getElementById("navh4444").innerText="Logged In";
       } else {
         alert("Wrong OTP");
       }
@@ -161,11 +162,15 @@
         localStorage.setItem("users", JSON.stringify(users));
         alert("Login successful");
         window.location.href = "index.html"
+        document.getElementById("navh4444").innerText = "Logged In";
       } else {
         alert("Wrong OTP");
       }
     }
   }
+
+ 
+
 
 
 

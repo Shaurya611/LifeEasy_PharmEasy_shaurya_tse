@@ -1,103 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Payment Page</title>
-    <link
-      rel="shortcut icon"
-      href="https://pharmeasy.in/pe_logo_2x.png"
-      type="image/x-icon"
-    />
 
-    <link rel="stylesheet" href="payment.css" />
-  </head>
-  <script
-    src="https://kit.fontawesome.com/1d18d1cefe.js"
-    crossorigin="anonymous"
-  ></script>
-  <style>
-    body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  line-height: 1.5;
-  letter-spacing: 1.2;
-  color: #4f585e;
-}
-#top {
-  width: 100%;
-  background-color: #10847e;
-  /* border:1px solid black; */
-  height: 90px;
-}
-#top1 {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  width: 80%;
-  /* border: 1px solid black;; */
-  height: 60px;
-  margin: auto;
-  color: white;
-}
-#top1 > img {
-  height: 56px;
-  width: 181px;
-}
-#payment_methods {
-  width: 80%;
-  /* border: 1px solid black;*/
-  height: 800px;
-  margin: auto;
-  margin-top: 5px;
-}
-#offers1 {
-  display: flex;
-  justify-content: space-between;
-  /* border:1px solid black; */
-  height: 80px;
-}
-#offers1 > div {
-  /* border:1px solid black; */
-  width: 400px;
-}
-#offers2 {
-  display: flex;
-  justify-content: space-around;
-  background-color: #f2fff8;
-  border-radius: 5px;
-  margin-right: 30px;
-}
-#offers2 > img {
-  margin-top: 10px;
-  height: 44px;
-  width: 73px;
-}
-#g {
-  color: green;
-}
-#t {
-  font-weight: 600;
-}
-#payment_methods1 {
-  /* border:1px solid black; */
-  height: 500px;
-  display: grid;
-  grid-template-columns: 45% 35%;
-  grid-template-rows: 900px 300px;
-  gap: 230px;
-}
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment Page</title>
+  <link rel="shortcut icon" href="https://pharmeasy.in/pe_logo_2x.png" type="image/x-icon" />
 
-#pricebox {
-  height: 200px;
-  padding: 20px;
-  text-align: left;
-}
-#payment_methods2 {
-  gap: 4px;
-}
-/* #payment_methods2 > div {
+  <link rel="stylesheet" href="payment.css" />
+</head>
+<script src="https://kit.fontawesome.com/1d18d1cefe.js" crossorigin="anonymous"></script>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    line-height: 1.5;
+    letter-spacing: 1.2;
+    color: #4f585e;
+  }
+
+  #top {
+    width: 100%;
+    background-color: #10847e;
+    /* border:1px solid black; */
+    height: 90px;
+  }
+
+  #top1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 80%;
+    /* border: 1px solid black;; */
+    height: 60px;
+    margin: auto;
+    color: white;
+  }
+
+  #top1>img {
+    height: 56px;
+    width: 181px;
+  }
+
+  #payment_methods {
+    width: 80%;
+    /* border: 1px solid black;*/
+    height: 800px;
+    margin: auto;
+    margin-top: 5px;
+  }
+
+  #offers1 {
+    display: flex;
+    justify-content: space-between;
+    /* border:1px solid black; */
+    height: 80px;
+  }
+
+  #offers1>div {
+    /* border:1px solid black; */
+    width: 400px;
+  }
+
+  #offers2 {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f2fff8;
+    border-radius: 5px;
+    margin-right: 30px;
+  }
+
+  #offers2>img {
+    margin-top: 10px;
+    height: 44px;
+    width: 73px;
+  }
+
+  #g {
+    color: green;
+  }
+
+  #t {
+    font-weight: 600;
+  }
+
+  #payment_methods1 {
+    /* border:1px solid black; */
+    height: 500px;
+    display: grid;
+    grid-template-columns: 45% 35%;
+    grid-template-rows: 900px 300px;
+    gap: 230px;
+  }
+
+  #pricebox {
+    height: 200px;
+    padding: 20px;
+    text-align: left;
+  }
+
+  #payment_methods2 {
+    gap: 4px;
+  }
+
+  /* #payment_methods2 > div {
   display: flex;
   justify-content: space-between;
   border: 1px solid black;
@@ -108,233 +115,198 @@
   width: 50px;
   margin-top: 18px;
 } */
-#lighter {
-  font-size: small;
-  font-weight: lighter;
-}
-input {
-  width: 20px;
-  height: 20px;
-}
-.methods {
-  display: flex;
-  justify-content: space-between;
-  background-color: white;
-  color: black;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  margin-top: 10px;
-}
-.content {
-  display: none;
-  overflow: hidden;
-  text-align: center;
-}
-.button {
-  background-color: #10847e;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  padding: 12px 29px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-input[type="text"] {
-  width: 80%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  height: 40px;
-}
+  #lighter {
+    font-size: small;
+    font-weight: lighter;
+  }
 
-  </style>
-  <body>
-    <div id="top">
-      <div id="top1">
-        <img
-          src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png"
-          alt=""
-        />
-        <h4>
-          <i class="fa-solid fa-shield-cat"></i>&nbsp;&nbsp;100% Secure Payments
-          &nbsp;&nbsp;&nbsp;&nbsp;
-        </h4>
+  input {
+    width: 20px;
+    height: 20px;
+  }
+
+  .methods {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .content {
+    display: none;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .button {
+    background-color: #10847e;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 12px 29px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  input[type="text"] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 40px;
+  }
+</style>
+
+<body>
+  <div id="top">
+    <div id="top1">
+      <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt="" />
+      <h4>
+        <i class="fa-solid fa-shield-cat"></i>&nbsp;&nbsp;100% Secure Payments
+        &nbsp;&nbsp;&nbsp;&nbsp;
+      </h4>
+    </div>
+  </div>
+
+  <div id="payment_methods">
+    <div id="offers1">
+      <div>
+        <h1>Offers</h1>
+      </div>
+      <div id="offers2">
+        <img src="https://assets.pharmeasy.in/web-assets/dist/9abb1d25.svg" alt="" />
+        <h5>PharmEasy Wallet<br /><u id="g">T&C apply</u></h5>
+        <h4 id="g"><i class="fa-solid fa-circle-check"></i></h4>
       </div>
     </div>
+    <div id="payment_methods1">
+      <div id="payment_methods2">
+        <div class="methods">
+          <img src="https://cdn.pharmeasy.in/payments/wallet_icons/paytm.png" alt=""
+            style="height: 20px; width: 50px" />
+          Paytm Wallet <br />
+          Get min 50 off on min transaction of 100 via Paytm wallet.
 
-    <div id="payment_methods">
-      <div id="offers1">
-        <div><h1>Offers</h1></div>
-        <div id="offers2">
-          <img
-            src="https://assets.pharmeasy.in/web-assets/dist/9abb1d25.svg"
-            alt=""
-          />
-          <h5>PharmEasy Wallet<br /><u id="g">T&C apply</u></h5>
-          <h4 id="g"><i class="fa-solid fa-circle-check"></i></h4>
+          <input type="radio" />
+        </div>
+        <div class="content">
+          <a href="paymetOtp.html" class="button">Place Order & Pay</a>
+        </div>
+        <div class="methods">
+          <img src="https://cdn.pharmeasy.in/payments/amazonpay_new.png" alt="" style="height: 50px; width: 50px" />
+          Amazon Pay <br />
+          Get upto 500 off on min transaction of 100 via amazon pay.
+
+          <input type="radio" />
+        </div>
+        <div class="content">
+          <a href="paymetOtp.html" class="button">Place Order & Pay</a>
+        </div>
+
+        <div class="methods">
+          <img src="https://cdn.pharmeasy.in/payments/wallet_icons/phonepe.png" alt=""
+            style="height: 50px; width: 50px" />PhonePe <br />
+          Get scratch card and win up to Rs.750 cashback via PhonePe.
+
+          <input type="radio" />
+        </div>
+        <div class="content">
+          <a href="paymetOtp.html" class="button">Place Order & Pay</a>
+        </div>
+
+        <div class="methods">
+          <img src="https://cdn.pharmeasy.in/payments/wallet_icons/mobikwik.png" alt=""
+            style="height: 50px; width: 50px" />Mobikwik <br />
+          Get upto 500 cashback min transaction of 100 via mobikwik.
+
+          <input type="radio" />
+        </div>
+        <div class="content">
+          <a href="paymetOtp.html" class="button">Place Order & Pay</a>
+        </div>
+
+        <!-- other options start -->
+
+        <div>
+          <h1>Other Options</h1>
+        </div>
+
+        <div class="methods">
+          <img src="https://cdn.pharmeasy.in/payments/card.png" alt="" style="height: 50px; width: 50px" />
+          Credit/Debit Card <br />
+          Get flat 250rs off on icici credit or debit card.
+
+          <h3 id="g"><i class="fa-solid fa-angle-right"></i></h3>
+        </div>
+        <div class="content">
+          <input type="text" placeholder="Enter your card number" /><br />
+          <input type="text" placeholder="YY/MM/DD" /><br />
+          <input type="text" placeholder="Enter CVV" /><br />
+          <a href="paymetOtp.html" class="button">Place Order & Pay</a>
+        </div>
+
+        <div class="methods">
+          <img src="https://cdn.pharmeasy.in/payments/netbanking.png" alt="" style="height: 50px; width: 50px" />
+          Net Banking <br />
+          We support over 100 banks from UK and US
+
+          <h3 id="g"><i class="fa-solid fa-angle-right"></i></h3>
+        </div>
+        <div class="content">
+          <p>
+            <img src="https://cdn.pharmeasy.in/payments/axix.png" alt=""
+              style="height: 50px; width: 50px; border: 1px solid black" />&nbsp;&nbsp;
+            <img src="https://cdn.pharmeasy.in/payments/hdfc.png" alt=""
+              style="height: 50px; width: 50px; border: 1px solid black" />&nbsp;&nbsp;
+            <img src="https://cdn.pharmeasy.in/payments/icici.png" alt=""
+              style="height: 50px; width: 50px; border: 1px solid black" />&nbsp;&nbsp;
+            <img src="https://cdn.pharmeasy.in/payments/kotak.png" alt=""
+              style="height: 50px; width: 50px; border: 1px solid black" />&nbsp;&nbsp;
+            <img src="https://cdn.pharmeasy.in/payments/sbi.png" alt=""
+              style="height: 50px; width: 50px; border: 1px solid black" />&nbsp;&nbsp;<br />
+            Axisbank HDFC bank ICICI Kotak bank SBI bank
+          </p>
+        </div>
+
+        <div class="methods">
+          <img src="https://consumer-app-images.pharmeasy.in/payment-icons/cod.png" alt=""
+            style="height: 50px; width: 50px" />
+          Cash On delivery <br />
+          Pay via cash or UPI at the time of delivery
+
+          <h3 id="g"><i class="fa-solid fa-angle-right"></i></h3>
+        </div>
+        <div class="content">
+          <a href="paymetOtp.html" class="button">Place Order</a>
         </div>
       </div>
-      <div id="payment_methods1">
-        <div id="payment_methods2">
-          <div class="methods">
-            <img
-              src="https://cdn.pharmeasy.in/payments/wallet_icons/paytm.png"
-              alt=""
-              style="height: 20px; width: 50px"
-            />
-            Paytm Wallet <br />
-            Get min 50 off on min transaction of 100 via Paytm wallet.
-
-            <input type="radio" />
-          </div>
-          <div class="content">
-            <a href="paymetOtp.html" class="button">Place Order & Pay</a>
-          </div>
-          <div class="methods">
-            <img
-              src="https://cdn.pharmeasy.in/payments/amazonpay_new.png"
-              alt=""
-              style="height: 50px; width: 50px"
-            />
-            Amazon Pay <br />
-            Get upto 500 off on min transaction of 100 via amazon pay.
-
-            <input type="radio" />
-          </div>
-          <div class="content">
-            <a href="paymetOtp.html" class="button">Place Order & Pay</a>
-          </div>
-
-          <div class="methods">
-            <img
-              src="https://cdn.pharmeasy.in/payments/wallet_icons/phonepe.png"
-              alt=""
-              style="height: 50px; width: 50px"
-            />PhonePe <br />
-            Get scratch card and win up to Rs.750 cashback via PhonePe.
-
-            <input type="radio" />
-          </div>
-          <div class="content">
-            <a href="paymetOtp.html" class="button">Place Order & Pay</a>
-          </div>
-
-          <div class="methods">
-            <img
-              src="https://cdn.pharmeasy.in/payments/wallet_icons/mobikwik.png"
-              alt=""
-              style="height: 50px; width: 50px"
-            />Mobikwik <br />
-            Get upto 500 cashback min transaction of 100 via mobikwik.
-
-            <input type="radio" />
-          </div>
-          <div class="content">
-            <a href="paymetOtp.html" class="button">Place Order & Pay</a>
-          </div>
-
-          <!-- other options start -->
-
-          <div><h1>Other Options</h1></div>
-
-          <div class="methods">
-            <img
-              src="https://cdn.pharmeasy.in/payments/card.png"
-              alt=""
-              style="height: 50px; width: 50px"
-            />
-            Credit/Debit Card <br />
-            Get flat 250rs off on icici credit or debit card.
-
-            <h3 id="g"><i class="fa-solid fa-angle-right"></i></h3>
-          </div>
-          <div class="content">
-            <input type="text" placeholder="Enter your card number" /><br />
-            <input type="text" placeholder="YY/MM/DD" /><br />
-            <input type="text" placeholder="Enter CVV" /><br />
-            <a href="paymetOtp.html" class="button">Place Order & Pay</a>
-          </div>
-
-          <div class="methods">
-            <img
-              src="https://cdn.pharmeasy.in/payments/netbanking.png"
-              alt=""
-              style="height: 50px; width: 50px"
-            />
-            Net Banking <br />
-            We support over 100 banks from UK and US
-
-            <h3 id="g"><i class="fa-solid fa-angle-right"></i></h3>
-          </div>
-          <div class="content">
-            <p>
-              <img
-                src="https://cdn.pharmeasy.in/payments/axix.png"
-                alt=""
-                style="height: 50px; width: 50px; border: 1px solid black"
-              />&nbsp;&nbsp;
-              <img
-                src="https://cdn.pharmeasy.in/payments/hdfc.png"
-                alt=""
-                style="height: 50px; width: 50px; border: 1px solid black"
-              />&nbsp;&nbsp;
-              <img
-                src="https://cdn.pharmeasy.in/payments/icici.png"
-                alt=""
-                style="height: 50px; width: 50px; border: 1px solid black"
-              />&nbsp;&nbsp;
-              <img
-                src="https://cdn.pharmeasy.in/payments/kotak.png"
-                alt=""
-                style="height: 50px; width: 50px; border: 1px solid black"
-              />&nbsp;&nbsp;
-              <img
-                src="https://cdn.pharmeasy.in/payments/sbi.png"
-                alt=""
-                style="height: 50px; width: 50px; border: 1px solid black"
-              />&nbsp;&nbsp;<br />
-              Axisbank HDFC bank ICICI Kotak bank SBI bank
-            </p>
-          </div>
-
-          <div class="methods">
-            <img
-              src="https://consumer-app-images.pharmeasy.in/payment-icons/cod.png"
-              alt=""
-              style="height: 50px; width: 50px"
-            />
-            Cash On delivery <br />
-            Pay via cash or UPI at the time of delivery
-
-            <h3 id="g"><i class="fa-solid fa-angle-right"></i></h3>
-          </div>
-          <div class="content">
-            <a href="paymetOtp.html" class="button">Place Order</a>
-          </div>
-        </div>
-        <!-- price box  -->
-        <div id="pricebox">
-          <h3>Price Breakdown</h3>
-          <h4>Cart Value :  ₹ 190.71 </h4>
-          <h4 id="t1">Delivery Charge :  ₹ 40<span id="t3"></span></h4>
-          <hr />
-          <h4>Amount to be paid :  ₹ 230.71<span id="t2"></span></h4>
-        </div>
+      <!-- price box  -->
+      <div id="pricebox">
+        <h3>Price Breakdown</h3>
+        <h4 id="totalPrice">Cart Value : ₹ 190.71 </h4>
+        <h4 id="t1">Delivery Charge : ₹ 40<span id="t3"></span></h4>
+        <hr />
+        <h4 id="payAmount">Amount to be paid : ₹ 230.71<span id="t2"></span></h4>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
 <script>
   var coll = document.getElementsByClassName("methods");
@@ -354,12 +326,31 @@ input[type="text"] {
 
 
   /* sujeet */
-  let data = JSON.parse(localStorage.getItem("data")) || {}
+  // let data = JSON.parse(localStorage.getItem("data")) || {}
 
-  document.getElementById("t").innerText = data.cp
-  document.getElementById("t2").innerText = data.tp
-  document.getElementById("t3").innerText = data.dp
+  // document.getElementById("t").innerText = data.cp
+  // document.getElementById("t2").innerText = data.tp
+  // document.getElementById("t3").innerText = data.dp
 
 
+  var coviddata = JSON.parse(localStorage.getItem("cartdata"));
 
+  // var totalPrice = coviddata.reduce(function (sum, { img, name, strikeOffPrice, price, rating }) { return sum + price })
+
+  var totalPrice = 0
+
+  for (let i = 0; i < coviddata.length; i++) {
+    // console.log(coviddata[i].price)
+    totalPrice = totalPrice + coviddata[i].price
+  }
+
+  // console.log(coviddata.length)
+
+  // console.log(coviddata)
+// 
+  // console.log(totalPrice)
+
+  document.querySelector("#totalPrice").innerText = totalPrice
+  document.querySelector("#payAmount").innerText = totalPrice + 40
+  // console.log('ssssss')
 </script>
